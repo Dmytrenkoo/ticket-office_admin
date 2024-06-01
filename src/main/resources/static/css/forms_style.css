@@ -1,0 +1,17 @@
+.header{
+    margin-bottom: 25px;
+}
+
+.work {
+    margin: auto;
+}
+
+.footer{
+    margin-top: 50px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px; /* відступ зверху */
+    margin-bottom: 20px; /* відступ знизу */
+}

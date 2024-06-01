@@ -9,7 +9,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class TestController {
     @GetMapping("/")
     public String getPageHome(Model model){
-        model.addAttribute("hello", "Hello Student!!");
-        return "index";
+        return "index-user";
     }
+
+    @GetMapping("/manager")
+    public String getManagerPage(){
+        return "manager";
+    }
+
+    @GetMapping("/admin")
+    public String getAdminPage(){
+        return "admin";
+    }
+
 }

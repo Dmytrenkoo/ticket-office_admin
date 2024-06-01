@@ -28,5 +28,5 @@ public class Routes {
     private Double travelTime;
 
     @OneToMany(mappedBy = "routes")
-    private List<TimetableHasRoute> timetableHasRoute;
+    private List<TrainHasRoute> trainHasRoutes;
 }

@@ -19,12 +19,20 @@ public class Trains {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private Integer trainNumber;
     private String type;
     private Integer seats;
 
     @OneToMany(mappedBy = "trains")
-    private List<TrainHasTimetableHasRoute> trainHasTimetableHasRoutes;
+    private List<TrainHasRoute> trainHasRoutes;
 
     @OneToMany(mappedBy = "trains")
     private List<Tickets> tickets;
+
+    public Trains(Long id, Integer trainNumber, String type, Integer seats) {
+        this.id = id;
+        this.trainNumber = trainNumber;
+        this.type = type;
+        this.seats = seats;
+    }
 }

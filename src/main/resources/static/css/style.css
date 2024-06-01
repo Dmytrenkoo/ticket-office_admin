@@ -16,6 +16,7 @@
     }
 }
 
+
 #logo {
     position: relative;
     display: inline-block;
@@ -23,3 +24,53 @@
     top: 0;
     padding-left: 20px;
 }
+
+.tab-content {
+    background: steelblue;
+    margin-top: -3px;
+    margin-left: -3px;
+    position: relative;
+    padding: 45px 50px;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-column {
+    margin-right: 25px;
+}
+
+#footer{
+    position: relative;
+    margin-top: 100px;
+    padding: 44px 290px 50px 55px;
+    border-bottom: solid 3px #3b5a78;
+}
+
+.left_side {
+    left: 0;
+}
+
+.right_side {
+    right: 0;
+}
+
+.left_side, .right_side {
+    position: absolute;
+    top: 58px;
+    width: 290px;
+}
+
+td{  text-align: center; }
+
+.title {
+    text-align: center;
+    margin-top: 20px; /* відступ зверху */
+    margin-bottom: 20px; /* відступ знизу */
+}
+
+
+

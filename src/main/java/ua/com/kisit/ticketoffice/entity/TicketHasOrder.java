@@ -21,9 +21,17 @@ public class TicketHasOrder {
 
     @ManyToOne
     @JoinColumn(name = "tickets_id")
-    private Tickets tickets;
+    private Tickets _tickets;
 
     @ManyToOne
     @JoinColumn(name = "order_id")
-    private Order orders;
+    private Order _orders;
+
+    private int quantity;
+
+    public TicketHasOrder(Tickets _tickets, int quantity, Order _orders) {
+        this._tickets = _tickets;
+        this._orders = _orders;
+        this.quantity = quantity;
+    }
 }

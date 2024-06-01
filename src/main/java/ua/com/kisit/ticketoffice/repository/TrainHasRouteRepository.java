@@ -1,7 +1,7 @@
 package ua.com.kisit.ticketoffice.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ua.com.kisit.ticketoffice.entity.TimetableHasRoute;
+import ua.com.kisit.ticketoffice.entity.TrainHasRoute;
 
-public interface TimetableHasRouteRepository extends JpaRepository<TimetableHasRoute, Long> {
+public interface TrainHasRouteRepository extends JpaRepository<TrainHasRoute, Long> {
 }

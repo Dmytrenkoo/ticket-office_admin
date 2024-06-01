@@ -1,7 +1,7 @@
 <div class="mix">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid" style="margin-bottom: 25px">
-            <a class="navbar-brand" href="/templates/index.ftl">
+            <a class="navbar-brand" href="/templates/index-user.ftl">
                 <img src="/static/images/logo.png" alt="logo" style="width:100px;height:100px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

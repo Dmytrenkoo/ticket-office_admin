@@ -14,18 +14,17 @@ import java.util.List;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "orders")
+@Table(name = "_orders")
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private boolean status;
     private String payment;
 
     @ManyToOne
     @JoinColumn(name="passengers_id")
     private Passengers passengers;
 
-    @OneToMany(mappedBy = "orders")
+    @OneToMany(mappedBy = "_orders")
     private List<TicketHasOrder>  ticketHasOrders;
 }
